@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// math exports a default object with methods
+// login exports a default object with methods
 import login from '../../pages/login'
 
 describe('Run all login tests', function () {
@@ -16,11 +16,11 @@ describe('Run all login tests', function () {
     //   expect(add(1, 2)).to.eq(3)
     // })
 
-    it('test home page', function () {
+    it('test home page', () => {
       expect(visitHomePage('http://localhost:3000'))
     })
 
-    it('logs in', function () {
+    it('logs in', () => {
       expect(logIn())
     })
 
